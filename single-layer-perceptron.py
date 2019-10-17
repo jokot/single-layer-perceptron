@@ -144,8 +144,8 @@ training_data = iris.head(100).values.tolist()
 for row in training_data:
     row[-1]=0 if row[-1]=="Iris-setosa" else 1
 
-n_epoch = 300
-k_fold = 5
+n_epoch = 500
+k_fold = 10
 weights_init = [0.5 for i in range(4)]
 bias_init = 0.5
 
